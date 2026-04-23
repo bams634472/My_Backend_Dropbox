@@ -1,8 +1,8 @@
 :root {
   --bg-black: #000000;
   --text-white: #ffffff;
-  --electric-blue: #007bff;
-  --hover-blue: #0056b3;
+  --border-white: #ffffff;
+  --hover-grey: #333333;
 }
 
 .dark-theme-wrapper {
@@ -13,42 +13,43 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Inter', sans-serif; /* A cleaner font for B&W themes */
 }
 
 .logo-text {
   font-size: 3rem;
-  margin-bottom: 0;
+  font-weight: 800;
+  letter-spacing: -2px;
+  margin-bottom: 5px;
 }
 
+/* Changed the blue dot to white */
 .blue-dot {
-  color: var(--electric-blue);
+  color: var(--text-white);
 }
 
 .subtitle {
-  color: #888;
-  margin-top: 5px;
+  color: #666; /* Dimmed white/grey for the subtitle */
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
   margin-bottom: 40px;
 }
 
-.blue-button {
-  background-color: var(--electric-blue);
-  color: white;
-  padding: 14px 32px;
-  border-radius: 8px;
+/* New Black & White Button */
+.bw-button {
+  background-color: transparent;
+  color: var(--text-white);
+  padding: 12px 30px;
+  border: 2px solid var(--border-white); /* White border instead of blue fill */
+  border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
-  transition: 0.3s;
+  transition: all 0.3s ease;
   display: inline-block;
 }
 
-.blue-button:hover {
-  background-color: var(--hover-blue);
-  transform: scale(1.05);
-}
-
-.footer {
-  margin-top: 50px;
-  font-size: 0.8rem;
-  color: #444;
+.bw-button:hover {
+  background-color: var(--text-white);
+  color: var(--bg-black); /* Inverts colors on hover */
 }

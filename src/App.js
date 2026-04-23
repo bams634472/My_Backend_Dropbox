@@ -70,4 +70,10 @@ function App() {
   );
 }
 
+
+<label htmlFor="file-input" className="bw-button">
+  {uploading ? 'UPLOADING...' : 'UPLOAD FILE'}
+</label>
+// ...
+
 export default App;
