@@ -1,0 +1,62 @@
+{
+  "version": "53.0.0",
+  "files": {
+    "faa95a81ae7d7373f3e1f242268f904eb748d8d0fdd306e8a6fe515a1905a7d6": {
+      "displayName": "amplify-dropcloud-owner-sandbox-57270b12af/storage/Custom::S3AutoDeleteObjectsCustomResourceProvider Code",
+      "source": {
+        "path": "asset.faa95a81ae7d7373f3e1f242268f904eb748d8d0fdd306e8a6fe515a1905a7d6",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "current_account-current_region-e31788a2": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "faa95a81ae7d7373f3e1f242268f904eb748d8d0fdd306e8a6fe515a1905a7d6.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "7dbfb309fd06f438d2d8a7c62d8299819c9d8e6692097ac8dd8fd5bb6c05825c": {
+      "displayName": "auth Nested Stack Template",
+      "source": {
+        "path": "amplifydropcloudownersandbox57270b12afauth553DF35F.nested.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region-092ee06e": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "7dbfb309fd06f438d2d8a7c62d8299819c9d8e6692097ac8dd8fd5bb6c05825c.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "ba51a866cfef8c9d0769aec5faf79e9b4926e9c2e4535fda3e23c53ee3d41b22": {
+      "displayName": "storage Nested Stack Template",
+      "source": {
+        "path": "amplifydropcloudownersandbox57270b12afstorageD2801C96.nested.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region-cc46dbd7": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "ba51a866cfef8c9d0769aec5faf79e9b4926e9c2e4535fda3e23c53ee3d41b22.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "9571b98b482eb11cffb12e7f47caf3c777c397b2f73e6e3a59e23e52e4dfda69": {
+      "displayName": "amplify-dropcloud-owner-sandbox-57270b12af Template",
+      "source": {
+        "path": "amplify-dropcloud-owner-sandbox-57270b12af.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region-db854a5b": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "9571b98b482eb11cffb12e7f47caf3c777c397b2f73e6e3a59e23e52e4dfda69.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

@@ -1,11 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Amplify } from 'aws-amplify';
-import awsConfig from './aws-exports';
-import App from './App';
-import './App.css';
-
-Amplify.configure(awsConfig);
+import App from './App.js'; // Added the .js extension to satisfy the "Breaking Change" error
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

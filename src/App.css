@@ -1,180 +1,54 @@
-
-
-
-/* ── Global reset & design tokens ─────────────────────────────────── */
 :root {
-  --bg:        #0d0d0d;
-  --bg2:       #141414;
-  --bg3:       #1c1c1c;
-  --border:    #2a2a2a;
-  --border2:   #3a3a3a;
-  --text:      #e8e8e0;
-  --muted:     #666660;
-  --green:     #00ff88;
-  --green-dim: #00cc6a;
-  --yellow:    #f5d020;
-  --teal:      #00d4c8;
-  --red:       #ff4455;
-  --mono:      'Space Mono', monospace;
-  --sans:      'Syne', sans-serif;
-  --radius:    6px;
-  --radius-lg: 12px;
+  --bg-black: #000000;
+  --text-white: #ffffff;
+  --electric-blue: #007bff;
+  --hover-blue: #0056b3;
 }
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-html { font-size: 16px; }
-
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: var(--sans);
-  font-size: 15px;
-  line-height: 1.6;
+.dark-theme-wrapper {
+  background-color: var(--bg-black);
+  color: var(--text-white);
   min-height: 100vh;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* ── Scrollbar ─────────────────────────────────────────────────────── */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
-
-/* ── App shell ─────────────────────────────────────────────────────── */
-.app {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-}
-
-.app-header {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 18px 32px;
-  border-bottom: 1px solid var(--border);
-  background: var(--bg);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.app-header .logo {
-  font-family: var(--mono);
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--green);
-  letter-spacing: -0.5px;
+.logo-text {
+  font-size: 3rem;
+  margin-bottom: 0;
 }
 
-.app-header .logo span {
-  color: var(--muted);
-  font-weight: 400;
+.blue-dot {
+  color: var(--electric-blue);
 }
 
-.app-header .user-info {
-  display: flex;
-  align-items: center;
-  gap: 16px;
+.subtitle {
+  color: #888;
+  margin-top: 5px;
+  margin-bottom: 40px;
 }
 
-.app-header .user-email {
-  font-family: var(--mono);
-  font-size: 11px;
-  color: var(--muted);
-}
-
-.app-main {
-  flex: 1;
-  max-width: 900px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 40px 24px;
-}
-
-/* ── Buttons ───────────────────────────────────────────────────────── */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 9px 18px;
-  border-radius: var(--radius);
-  border: 1px solid transparent;
-  font-family: var(--mono);
-  font-size: 12px;
-  font-weight: 700;
+.blue-button {
+  background-color: var(--electric-blue);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: all 0.15s ease;
-  text-decoration: none;
-  letter-spacing: 0.3px;
-}
-
-.btn-primary {
-  background: var(--green);
-  color: #000;
-  border-color: var(--green);
-}
-.btn-primary:hover {
-  background: var(--green-dim);
-  border-color: var(--green-dim);
-}
-
-.btn-ghost {
-  background: transparent;
-  color: var(--muted);
-  border-color: var(--border2);
-}
-.btn-ghost:hover {
-  color: var(--text);
-  border-color: var(--border2);
-  background: var(--bg3);
-}
-
-.btn-danger {
-  background: transparent;
-  color: var(--red);
-  border-color: rgba(255, 68, 85, 0.3);
-}
-.btn-danger:hover {
-  background: rgba(255, 68, 85, 0.1);
-}
-
-.btn:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
-
-/* ── Loading spinner ───────────────────────────────────────────────── */
-@keyframes spin { to { transform: rotate(360deg); } }
-.spinner {
-  width: 16px;
-  height: 16px;
-  border: 2px solid var(--border2);
-  border-top-color: var(--green);
-  border-radius: 50%;
-  animation: spin 0.6s linear infinite;
+  font-weight: bold;
+  transition: 0.3s;
   display: inline-block;
 }
 
-.app-container {
-  background-color: #000000;
-  color: #ffffff;
-  min-height: 100vh;
-  padding: 40px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.blue-button:hover {
+  background-color: var(--hover-blue);
+  transform: scale(1.05);
 }
 
-.upload-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 4px;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.upload-button:hover {
-  background-color: #0056b3;
+.footer {
+  margin-top: 50px;
+  font-size: 0.8rem;
+  color: #444;
 }

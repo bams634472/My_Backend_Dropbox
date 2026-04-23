@@ -1,86 +1,73 @@
-import { useState, useEffect } from 'react';
-import { getCurrentUser, signOut } from 'aws-amplify/auth';
-import AuthForm from './components/AuthForm';
-import FileUpload from './components/FileUpload';
-import FileList from './components/FileList';
-import VersionHistory from './components/VersionHistory';
+import React, { useState } from 'react';
+import { Amplify } from 'aws-amplify';
+import { uploadData } from 'aws-amplify/storage';
+import outputs from '../amplify_outputs.json';
+import './App.css';
 
-export default function App() {
-  const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [selectedFile, setSelectedFile] = useState(null);
-  const [refreshTick, setRefreshTick] = useState(0);
+// Handshake between your frontend and the S3/Auth backend
+Amplify.configure(outputs);
 
-  useEffect(() => {
-    checkUser();
-  }, []);
+/**
+ * FileUploader Component
+ * Follows the "1 Component per File" logic by being defined clearly here
+ * or moved to its own file later.
+ */
+const FileUploader = () => {
+  const [uploading, setUploading] = useState(false);
 
-  async function checkUser() {
-    try {
-      const u = await getCurrentUser();
-      setUser(u);
-    } catch {
-      setUser(null);
-    } finally {
-      setLoading(false);
-    }
+  const handleUpload = async (event) => {
+  const file = event.target.files?.[0];
+  if (!file) return;
+
+  setUploading(true);
+  try {
+    // This path matches your storage permission: files/{owner-id}/*
+    await uploadData({
+      path: (input) => `files/${input.identityId}/${file.name}`, 
+      data: file,
+    }).result;
+    
+    alert('File uploaded successfully!');
+  } catch (error) {
+    console.error('Upload error:', error);
+    alert('Upload failed. See console for details.');
+  } finally {
+    setUploading(false);
   }
-
-  async function handleSignOut() {
-    try {
-      await signOut();
-      setUser(null);
-    } catch (err) {
-      console.error('Sign out error', err);
-    }
-  }
-
-  function handleUploadComplete() {
-    setRefreshTick(t => t + 1);
-  }
-
-  if (loading) {
-    return (
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh' }}>
-        <div className="spinner" />
-      </div>
-    );
-  }
-
-  if (!user) {
-    return <AuthForm onAuthSuccess={checkUser} />;
-  }
+};
 
   return (
-    <div className="app">
+    <div className="upload-card">
+      <input
+        type="file"
+        id="file-input"
+        onChange={handleUpload}
+        style={{ display: 'none' }}
+      />
+      <label htmlFor="file-input" className="blue-button">
+        {uploading ? 'Processing...' : 'Upload to Cloud'}
+      </label>
+    </div>
+  );
+};
+
+function App() {
+  return (
+    <div className="dark-theme-wrapper">
       <header className="app-header">
-        <div className="logo">
-          drop<span>cloud</span>
-        </div>
-        <div className="user-info">
-          <span className="user-email">{user.signInDetails?.loginId || user.username}</span>
-          <button className="btn btn-ghost" onClick={handleSignOut}>
-            sign out
-          </button>
-        </div>
+        <h1 className="logo-text">DropCloud <span className="blue-dot">.</span></h1>
+        <p className="subtitle">Serverless Storage Solution</p>
       </header>
 
-      <main className="app-main">
-        <FileUpload userId={user.userId} onUploadComplete={handleUploadComplete} />
-        <FileList
-          userId={user.userId}
-          refreshTick={refreshTick}
-          onViewVersions={setSelectedFile}
-        />
+      <main className="content">
+        <FileUploader />
       </main>
 
-      {selectedFile && (
-        <VersionHistory
-          file={selectedFile}
-          userId={user.userId}
-          onClose={() => setSelectedFile(null)}
-        />
-      )}
+      <footer className="footer">
+        <p>Connected to: {outputs.storage?.bucket_name?.substring(0, 20)}...</p>
+      </footer>
     </div>
   );
 }
+
+export default App;
