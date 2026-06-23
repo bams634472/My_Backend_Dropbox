@@ -1,0 +1,50 @@
+{
+  "auth": {
+    "user_pool_id": "eu-north-1_Yxw9YcxWI",
+    "aws_region": "eu-north-1",
+    "user_pool_client_id": "5a18fbvqu428j59ja0mn5o1kpg",
+    "identity_pool_id": "eu-north-1:d544e167-cd20-4790-be17-c8ea23f4bfe2",
+    "mfa_methods": [],
+    "standard_required_attributes": [
+      "email"
+    ],
+    "username_attributes": [
+      "email"
+    ],
+    "user_verification_types": [
+      "email"
+    ],
+    "groups": [],
+    "mfa_configuration": "NONE",
+    "password_policy": {
+      "min_length": 8,
+      "require_lowercase": true,
+      "require_numbers": true,
+      "require_symbols": true,
+      "require_uppercase": true
+    },
+    "unauthenticated_identities_enabled": true
+  },
+  "storage": {
+    "aws_region": "eu-north-1",
+    "bucket_name": "amplify-dropcloud-owner-s-dropcloudfilesbucketb34d-9nzr4rull3to",
+    "buckets": [
+      {
+        "name": "dropcloudFiles",
+        "bucket_name": "amplify-dropcloud-owner-s-dropcloudfilesbucketb34d-9nzr4rull3to",
+        "aws_region": "eu-north-1",
+        "paths": {
+          "files/${cognito-identity.amazonaws.com:sub}/*": {
+            "entityidentity": [
+              "get",
+              "list",
+              "write",
+              "delete"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "version": "1.4"
+}

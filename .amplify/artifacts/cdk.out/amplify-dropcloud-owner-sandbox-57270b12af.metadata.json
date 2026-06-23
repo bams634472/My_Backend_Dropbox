@@ -1,0 +1,365 @@
+{
+  "/amplify-dropcloud-owner-sandbox-57270b12af": [
+    {
+      "type": "aws:cdk:stack-tags",
+      "data": [
+        {
+          "key": "amplify:deployment-type",
+          "value": "sandbox"
+        },
+        {
+          "key": "created-by",
+          "value": "amplify"
+        }
+      ]
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/deploymentType": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "deploymentType"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/region": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "region"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/userPoolId": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "userPoolId"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/webClientId": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "webClientId"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/identityPoolId": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "identityPoolId"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/authRegion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "authRegion"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/allowUnauthenticatedIdentities": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "allowUnauthenticatedIdentities"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/signupAttributes": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "signupAttributes"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/usernameAttributes": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "usernameAttributes"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/verificationMechanisms": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "verificationMechanisms"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/passwordPolicyMinLength": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "passwordPolicyMinLength"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/passwordPolicyRequirements": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "passwordPolicyRequirements"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/mfaConfiguration": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "mfaConfiguration"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/mfaTypes": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "mfaTypes"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/passwordlessOptions": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "passwordlessOptions"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/socialProviders": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "socialProviders"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/oauthCognitoDomain": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "oauthCognitoDomain"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/oauthScope": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "oauthScope"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/oauthRedirectSignIn": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "oauthRedirectSignIn"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/oauthRedirectSignOut": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "oauthRedirectSignOut"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/oauthResponseType": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "oauthResponseType"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/oauthClientId": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "oauthClientId"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/groups": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "groups"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/storageRegion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "storageRegion"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/bucketName": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "bucketName"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/buckets": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "buckets"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/BootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BootstrapVersion"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/CheckBootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CheckBootstrapVersion"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/auth/amplifydropcloudownersandbox57270b12afauthamplifyAuthUserPool13100F23Ref": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifydropcloudownersandbox57270b12afauthamplifyAuthUserPool13100F23Ref"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/auth/amplifydropcloudownersandbox57270b12afauthamplifyAuthUserPoolAppClientC9766FF8Ref": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifydropcloudownersandbox57270b12afauthamplifyAuthUserPoolAppClientC9766FF8Ref"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/auth/amplifydropcloudownersandbox57270b12afauthamplifyAuthIdentityPool4AFC660CRef": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifydropcloudownersandbox57270b12afauthamplifyAuthIdentityPool4AFC660CRef"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/auth/amplifydropcloudownersandbox57270b12afauthamplifyAuthauthenticatedUserRole484F5BA8Ref": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifydropcloudownersandbox57270b12afauthamplifyAuthauthenticatedUserRole484F5BA8Ref"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/auth.NestedStack/auth.NestedStackResource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "auth179371D7"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/storage/Custom::S3AutoDeleteObjectsCustomResourceProvider": [
+    {
+      "type": "aws:cdk:is-custom-resource-handler-customResourceProvider",
+      "data": true
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/storage/reference-to-amplifydropcloudownersandbox57270b12afauthNestedStackauthNestedStackResource678454E6Outputs.amplifydropcloudownersandbox57270b12afauthamplifyAuthauthenticatedUserRole484F5BA8Ref": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "referencetoamplifydropcloudownersandbox57270b12afauthNestedStackauthNestedStackResource678454E6Outputsamplifydropcloudownersandbox57270b12afauthamplifyAuthauthenticatedUserRole484F5BA8Ref"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/storage/amplifydropcloudownersandbox57270b12afstoragedropcloudFilesBucketE31A1BCBRef": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifydropcloudownersandbox57270b12afstoragedropcloudFilesBucketE31A1BCBRef"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/storage.NestedStack/storage.NestedStackResource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "storage0EC3F24A"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/CDKMetadata/Condition": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadataAvailable"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/auth/amplifyAuth/IdentityPool": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyAuthIdentityPool3FDE84CC"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/auth/amplifyAuth/IdentityPoolRoleAttachment": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyAuthIdentityPoolRoleAttachment045F17C8"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/auth/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/auth/CDKMetadata/Condition": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadataAvailable"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/storage/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/storage/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/storage/DROPCLOUD_FILES_BUCKET_NAMEParameter/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DROPCLOUDFILESBUCKETNAMEParameter9EA5C4CF"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/storage/amplify-dropcloud-owner-sandbox-57270b12af--storageAccess3/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifydropcloudownersandbox57270b12afstorageAccess3FEB5CF3F"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/storage/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/storage/CDKMetadata/Condition": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadataAvailable"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/auth/amplifyAuth/UserPool/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyAuthUserPool4BA7F805"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/auth/amplifyAuth/UserPoolAppClient/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyAuthUserPoolAppClient2626C6F8"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/auth/amplifyAuth/authenticatedUserRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyAuthauthenticatedUserRoleD8DA3689"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/auth/amplifyAuth/unauthenticatedUserRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "amplifyAuthunauthenticatedUserRole2B524D9E"
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/storage/dropcloudFiles/Bucket/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "dropcloudFilesBucketB34D953B"
+    },
+    {
+      "type": "aws:cdk:analytics:mixin",
+      "data": {
+        "mixin": "aws-cdk-lib.aws_s3.mixins.BucketAutoDeleteObjects"
+      }
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/storage/dropcloudFiles/Bucket/Policy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "dropcloudFilesBucketPolicy78E68C49"
+    },
+    {
+      "type": "aws:cdk:analytics:mixin",
+      "data": {
+        "mixin": "aws-cdk-lib.aws_s3.mixins.BucketPolicyStatements"
+      }
+    }
+  ],
+  "/amplify-dropcloud-owner-sandbox-57270b12af/storage/dropcloudFiles/Bucket/AutoDeleteObjectsCustomResource/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "dropcloudFilesBucketAutoDeleteObjectsCustomResource1E668F5A"
+    }
+  ]
+}

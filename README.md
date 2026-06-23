@@ -2,7 +2,7 @@
 
 > Serverless file synchronization — built on AWS, hosted at $0.
 
-**Live URL:** `https://YOUR-APP.amplifyapp.com` *(update after first deploy)*
+**Live URL:**(https://main.d14jnftetiz25k.amplifyapp.com)
 
 ---
 
